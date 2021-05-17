@@ -14,9 +14,10 @@ Comment > "It was a tough project because it was my first real world fictional p
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
-}
+
+/* body {
+    z-index: 1;
+} */
 
 
 /* ==================== Header =========================== */
@@ -118,7 +119,25 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 55px;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 11000px) {
+    .hero-text h1 {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero-text h1 {
+        font-size: 35px;
+    }
 }
 
 .hero-text h1 span {
@@ -131,6 +150,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 20px;
+    width: 450px;
 }
 
 .hero-text a {
@@ -170,6 +190,7 @@ body {
         display: none;
     }
     .heroArea {
+        text-align: center;
         min-height: 60vh;
         min-width: 100vw;
         background: linear-gradient(60deg, white, 50%, rgba(0, 255, 255, 0.378));
